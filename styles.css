@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #15364C;
+    --primary-light: #2F6079;
+    --secondary: #F9F6F4;
+    --light-pink: #E8D0CD;
+    --beige: #E7E1D9;
+    --light-blue: #A6C3D2;
+    --sky-blue: #CDDBE3;
+    --white: #ffffff;
+    --shadow: #F3ECE7;
+    --line: #979797;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom fonts */
+@font-face {
+    font-family: 'SofiaPro';
+    src: url('./fonts/sofia-pro/Sofia\ Pro\ Regular\ Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('./fonts/Brandon/brandon-grotesque-light-58a8a4b38001d.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PalmerLake';
+    src: url('./fonts/palmer-lake/PalmerLakePrint-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text,
+li,
+label {
+    font-family: 'SofiaPro', sans-serif;
+    color: var(--primary-light);
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.our-story .bottom {
+    font-family: 'PalmerLake', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    color: var(--primary-light);
+    margin-top: 25px;
+}
+
+/* generic styles */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0;
+}
+
+section .section-content {
+    max-width: 748px;
+    width: 100%;
+}
+
+.section-content .heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 748px;
+    width: 100%;
+}
+
+.section-content .heading-container .heading {
+    font-family: 'Brandon', sans-serif;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.section-content .heading-container .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--line);
+    opacity: 0.3;
+    z-index: 1;
+    border: none;
+}
+
+.section-content .text {
+    font-size: 16px;
+}
+
+.section-content .--btn {
+    font-family: 'SofiaPro', sans-serif;
+    font-weight: 800;
+    color: var(--primary);
+    background-color: var(--light-pink);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 42px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+.our-story,
+.become-partner,
+.training {
+    background-color: var(--beige);
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+    color: var(--white);
+    height: 55px;
+    padding: 0 85px;
+}
+
+.navbar-left .navbar-link {
+    font-family: 'Brandon', sans-serif;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--white);
+}
+
+.navbar-center .navbar-title {
+    font-family: 'Genos', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.navbar-right .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-bar {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white);
+}
+
+/* main section styling */
+.main-section {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.main-section .main-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 120px;
+    letter-spacing: -0.1em;
+    padding: 86px 0;
+}
+
+.main-section .main-heading .light-pink {
+    color: var(--light-pink);
+}
+
+.main-section .main-heading .light-blue {
+    color: var(--light-blue);
+}
+
+.main-section .main-heading .sky-blue {
+    color: var(--sky-blue);
+}
+
+.main-section .main-heading .beige {
+    color: var(--beige);
+}
+
+.main-section .main-heading .letter {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section .main-heading .baggage {
+    margin-top: -30px;
+}
+
+.main-section .main-heading .o-svg-container {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url('./assets/images/o-blob.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: -5px;
+}
+
+.main-section .emotional-wellness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .emotional-wellness .people {
+    width: 52px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.main-section .emotional-wellness .text {
+    width: 196px;
+    height: 32px;
+}
+
+.main-section .emotional-wellness .triangle {
+    width: 20px;
+    height: 18px;
+    margin: 20px 0;
+}
+
+.main-section .color-bar {
+    display: flex;
+    height: 12px;
+}
+
+.main-section .color-bar .rect {
+    height: 12px;
+}
+
+.main-section .color-bar .rect-1 {
+    width: 144px;
+    background-color: #CDDBE3;
+}
+
+.main-section .color-bar .rect-2 {
+    width: 144px;
+    background-color: #E7E1D9;
+}
+
+.main-section .color-bar .rect-3 {
+    width: 144px;
+    background-color: #E8D0CD;
+}
+
+.main-section .color-bar .rect-4 {
+    width: 144px;
+    background-color: #A6C3D2;
+}
+
+.main-section .color-bar .rect-5 {
+    width: 144px;
+    background-color: #CDDBE3;
+}
+
+.main-section .color-bar .rect-6 {
+    width: 144px;
+    background-color: #E7E1D9;
+}
+
+.main-section .color-bar .rect-7 {
+    width: 144px;
+    background-color: #E8D0CD;
+}
+
+.main-section .color-bar .rect-8 {
+    width: 144px;
+    background-color: #A6C3D2;
+}
+
+.main-section .color-bar .rect-9 {
+    width: 144px;
+    background-color: #CDDBE3;
+}
+
+.main-section .color-bar .rect-10 {
+    width: 144px;
+    background-color: #E7E1D9;
+}
+
+/* own okay humans section */
+.own-oh {
+    flex-direction: column;
+}
+
+.own-oh .section-content {
+    text-align: center;
+}
+
+.own-oh .own-oh-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary);
+    text-shadow: 4px 4px var(--shadow);
+}
+
+.own-oh .image-container {
+    margin: 36px auto;
+}
+
+.own-oh .image-container img {
+    width: 100%;
+}
+
+.own-oh .heading-container {
+    gap: 0;
+    z-index: 1;
+}
+
+.own-oh .heading-container .heading {
+    background-color: var(--white);
+    padding: 0 12px;
+    z-index: 1;
+}
+
+.own-oh .text {
+    margin-top: 20px;
+}
+
+/* our story section */
+.our-story .heading-container {
+    margin-bottom: 22px;
+}
+
+.our-story .our-story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.our-story .our-story-content .para-1,
+.our-story .our-story-content .para-2 {
+    display: flex;
+    gap: 48px;
+}
+
+.our-story .our-story-content .para-1 .text,
+.our-story .our-story-content .para-2 .text {
+    text-align: left;
+}
+
+/* how it works section */
+.how-it-works .section-content {
+    text-align: center;
+}
+
+.how-it-works .heading-container {
+    margin-bottom: 22px;
+}
+
+.how-it-works .cards-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    gap: 42px;
+}
+
+.how-it-works .cards-container .image-card {
+    max-width: 200px;
+    width: 100%;
+}
+
+.how-it-works .cards-container .image-card img {
+    height: 145px;
+    width: auto;
+    margin: 18px 0;
+}
+
+.how-it-works .cards-container .image-card h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+/* become a partner section */
+.become-partner .section-content {
+    text-align: center;
+}
+
+.become-partner .heading-container {
+    margin-bottom: 22px;
+}
+
+.become-partner .text {
+    color: var(--primary-light);
+    margin-bottom: 18px;
+}
+
+.custom-list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.custom-bullet {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 21px;
+    margin-right: 10px;
+    color: var(--white);
+    flex-shrink: 0;
+    background-image: url('./assets/images/blob.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.custom-list li {
+    display: flex;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: var(--primary-light);
+    text-align: left;
+}
+
+.custom-list li:last-child {
+    margin-bottom: 0px;
+}
+
+.custom-list:first-of-type li:last-of-type {
+    margin-bottom: 18px;
+}
+
+/* design and construction section */
+.design .section-content {
+    text-align: center;
+}
+
+.design .heading-container {
+    margin-bottom: 22px;
+}
+
+.design .design-content {
+    display: flex;
+    gap: 42px;
+}
+
+.design .design-content .text {
+    text-align: left;
+}
+
+.design .layout-img {
+    margin-top: 32px;
+    width: 100%;
+}
+
+/* training and support section */
+.training .section-content {
+    text-align: center;
+}
+
+.training .heading-container {
+    margin-bottom: 22px;
+}
+
+.training img {
+    margin-bottom: 24px;
+}
+
+.training .custom-list .custom-bullet {
+    width: 7px;
+    height: 6px;
+    margin-top: 5px;
+}
+
+.training .text {
+    margin-bottom: 24px;
+}
+
+/* sign me up section */
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up .section-content {
+    text-align: center;
+}
+
+.sign-up .heading-container {
+    margin-bottom: 22px;
+}
+
+.sign-up .text {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container .form-row {
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    background-color: #1f3b4d;
+    color: #fff;
+    padding: 40px 85px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 992px;
+    width: 100%;
+}
+
+.footer-content .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-logo {
+    width: 78px;
+    height: 50px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-social img {
+    width: 22px;
+    height: 22px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 72px;
+    }
+
+    footer {
+        padding: 40px 72px;
+    }
+
+    section .section-content,
+    .main .main-heading {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 72px;
+    }
+
+    .own-oh .image-container .front-image {
+        left: -50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section .main-heading {
+        font-size: 90px;
+        letter-spacing: -0.1em;
+        padding: 72px 0;
+    }
+
+    .own-oh .own-oh-heading {
+        font-size: 36px;
+    }
+
+    .our-story .our-story-content .para-1,
+    .our-story .our-story-content .para-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .how-it-works .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .custom-list-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .how-it-works .cards-container .image-card {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .custom-list {
+        width: 100%;
+    }
+
+    .design .design-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .design .layout-img {
+        margin-top: 18px;
+    }
+
+    .logos {
+        margin-bottom: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        gap: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0 48px;
+    }
+
+    footer {
+        padding: 40px 48px;
+    }
+
+    section {
+        padding: 48px 0;
+    }
+
+    .section-content .heading-container .heading {
+        font-size: 18px;
+    }
+
+    .section-content .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .section-content .--btn {
+        margin-top: 24px;
+        padding: 8px 50px;
+        font-size: 14px;
+    }
+
+    .custom-list li,
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 12px;
+    }
+
+    .navbar,
+    section .section-content,
+    .main .main-heading {
+        padding: 0 36px;
+    }
+
+    .navbar-left .navbar-link {
+        font-size: 10px;
+    }
+
+    .navbar-center .navbar-title {
+        font-size: 22px;
+    }
+
+    .main-section .main-heading {
+        font-size: 60px;
+    }
+
+    .main-section .main-heading .baggage {
+        margin-top: -10px;
+    }
+
+    .main-section .main-heading .o-svg-container {
+        width: 55px;
+        height: 55px;
+    }
+
+    .own-oh .own-oh-heading {
+        font-size: 28px;
+    }
+
+    .how-it-works .cards-container .image-card img {
+        height: 100px;
+    }
+
+    .how-it-works .cards-container .image-card h4 {
+        font-size: 20px;
+    }
+
+    .training img {
+        height: 90px;
+    }
+
+    footer {
+        padding: 24px 48px;
+    }
+}
+
+@media (max-width: 360px) {
+    section {
+        padding: 32px 0;
+    }
+    .section-content .--btn {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .navbar,
+    section .section-content,
+    .main .main-heading {
+        padding: 0 20px;
+    }
+    .main-section .main-heading {
+        font-size: 45px;
+    }
+    .main-section .main-heading .o-svg-container {
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+    }
+    .how-it-works .cards-container .image-card img {
+        height: 80px;
+    }
+    .how-it-works .cards-container {
+        gap: 0px;
+    }
+    .how-it-works .heading-container, .our-story .heading-container, .training .heading-container , .own-oh .heading-container, .become-partner .heading-container , .design .heading-container, .sign-up .heading-container {
+        margin-bottom: 16px;
+    }
+}
